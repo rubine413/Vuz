@@ -1,5 +1,5 @@
 {
-  "name": "purl",
+  "name": "vuz",
   "version": "0.1.0",
   "description": "ui components based with vue.js 2.x",
   "private": false,
@@ -7,14 +7,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name vue-purl --dest lib packages/index.js",
+    "lib": "vue-cli-service build --target lib --name vuz --dest lib packages/index.js",
     "test:unit": "vue-cli-service test:unit"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
@@ -30,6 +24,9 @@
     "prettier": "^2.2.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
