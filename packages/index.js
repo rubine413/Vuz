@@ -1,6 +1,6 @@
 // 导入颜色选择器组件
-import Button from './button'
-import Icon from './icon'
+import Button from './components/button'
+import Icon from './components/icon'
 
 // 存储组件列表
 const components = [Button, Icon]

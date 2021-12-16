@@ -1,6 +1,6 @@
 // import Vue from 'vue'
 
-import slot from '../utils/slot.js'
+import slot from '../../utils/slot.js'
 
 export default {
   name: 'vp-icon',
@@ -91,7 +91,18 @@ export default {
           on: this.$listeners,
           attrs: { 'aria-hidden': true },
         },
-        [h('svg', {}, h('path', { attrs: { d: path } }))]
+        [
+          h(
+            'svg',
+            {
+              attrs: {
+                width: '1em',
+                height: '1em',
+              },
+            },
+            [h('path', { attrs: { d: path } })]
+          ),
+        ]
       )
     } else if (img === true) {
       return h(
