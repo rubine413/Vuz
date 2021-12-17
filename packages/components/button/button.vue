@@ -1,12 +1,12 @@
 <template>
-  <div class="vp-button">
+  <div class="vz-button">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'vp-button',
+  name: 'vz-button',
   props: {
     type: String,
   },

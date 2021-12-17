@@ -3,7 +3,7 @@
 import slot from '../../utils/slot.js'
 
 export default {
-  name: 'vp-icon',
+  name: 'vz-icon',
 
   props: {
     name: String,
@@ -25,18 +25,18 @@ export default {
         }
       }
 
-      const defaultCls = 'vp-icon' + (this.left ? ' vp-icon-left' : '') + (this.right ? ' vp-icon-right' : '')
+      const defaultCls = 'vz-icon' + (this.left ? ' vz-icon-left' : '') + (this.right ? ' vz-icon-right' : '')
 
       if (icon.startsWith('img://')) {
         return {
           img: true,
-          cls: `${defaultCls} vp-icon__img`,
+          cls: `${defaultCls} vz-icon__img`,
           src: icon.substring(6),
         }
       } else if (icon.startsWith('path://')) {
         return {
           svg: true,
-          cls: `${defaultCls} vp-icon__svg`,
+          cls: `${defaultCls} vz-icon__svg`,
           path: icon.substring(7),
         }
       }
