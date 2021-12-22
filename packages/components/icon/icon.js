@@ -25,18 +25,18 @@ export default {
         }
       }
 
-      const defaultCls = 'vz-icon' + (this.left ? ' vz-icon-left' : '') + (this.right ? ' vz-icon-right' : '')
+      const defaultCls = 'vicon' + (this.left ? ' on-left' : '') + (this.right ? ' on-right' : '')
 
       if (icon.startsWith('img://')) {
         return {
           img: true,
-          cls: `${defaultCls} vz-icon__img`,
+          cls: `${defaultCls} vicon__img`,
           src: icon.substring(6),
         }
       } else if (icon.startsWith('path://')) {
         return {
           svg: true,
-          cls: `${defaultCls} vz-icon__svg`,
+          cls: `${defaultCls} vicon__svg`,
           path: icon.substring(7),
         }
       }
@@ -59,7 +59,7 @@ export default {
         cls = 'material-icons'
         content = icon.substring(4)
       } else {
-        cls = `vpicon ${icon}`
+        cls = `vicon ${icon}`
       }
 
       return {
