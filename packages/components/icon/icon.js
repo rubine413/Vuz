@@ -24,18 +24,18 @@ export default {
         }
       }
 
-      const defaultCls = 'vicon' + (this.left ? ' on-left' : '') + (this.right ? ' on-right' : '')
+      const defaultCls = 'v-icon' + (this.left ? ' on-left' : '') + (this.right ? ' on-right' : '')
 
       if (icon.startsWith('img://')) {
         return {
           img: true,
-          cls: `${defaultCls} vicon__img`,
+          cls: `${defaultCls} v-icon__img`,
           src: icon.substring(6),
         }
       } else if (icon.startsWith('path://')) {
         return {
           svg: true,
-          cls: `${defaultCls} vicon__svg`,
+          cls: `${defaultCls} v-icon__svg`,
           path: icon.substring(7),
         }
       }
@@ -58,7 +58,7 @@ export default {
         cls = 'material-icons'
         content = icon.substring(4)
       } else {
-        cls = `vicon ${icon}`
+        cls = `v-icon ${icon}`
       }
 
       return {
