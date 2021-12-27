@@ -3,6 +3,7 @@ import App from './App.vue'
 
 // 导入组件库
 import purl from '../packages'
+import '../packages/style/index.styl'
 // 注册组件库
 Vue.use(purl)
 

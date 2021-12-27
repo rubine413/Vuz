@@ -7,9 +7,10 @@ export default {
   props: {
     name: String,
     color: String,
-    size: String,
+    size: [String, Number],
     left: Boolean,
     right: Boolean,
+    spin: Boolean,
   },
 
   computed: {
@@ -23,8 +24,8 @@ export default {
           content: void 0,
         }
       }
-
-      const defaultCls = 'v-icon' + (this.left ? ' on-left' : '') + (this.right ? ' on-right' : '')
+      const { left, right } = this
+      let defaultCls = 'v-icon' + (left ? ' on-left' : '') + (right ? ' on-right' : '')
 
       if (icon.startsWith('img://')) {
         return {
@@ -38,6 +39,10 @@ export default {
           cls: `${defaultCls} v-icon__svg`,
           path: icon.substring(7),
         }
+      }
+      const spin = !!this.spin
+      if (spin) {
+        defaultCls += ' v-icon-spin'
       }
 
       let content = ' '
@@ -58,7 +63,7 @@ export default {
         cls = 'material-icons'
         content = icon.substring(4)
       } else {
-        cls = `v-icon ${icon}`
+        cls = `vicon vicon-${icon}`
       }
 
       return {
@@ -69,11 +74,12 @@ export default {
 
     style() {
       let style = {}
-      if (this.size !== void 0) {
-        style.fontSize = isNaN(this.size) ? this.size + 'px' : this.size
+      let { size, color } = this
+      if (size !== void 0) {
+        style.fontSize = isNaN(size) ? size : size + 'px'
       }
-      if (this.color !== void 0) {
-        style.color = this.color
+      if (color !== void 0) {
+        style.color = color
       }
       return style
     },
