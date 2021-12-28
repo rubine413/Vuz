@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <vz-button type="primary">button</vz-button>
-    <vz-icon name="loading" size="48px"></vz-icon>
+    <vz-icon name="loading-orbit" size="48px"></vz-icon>
   </div>
 </template>
 
