@@ -2,7 +2,7 @@
 import slot from '../../utils/slot.js'
 
 export default {
-  name: 'vz-icon',
+  name: 'v-icon',
 
   props: {
     name: String,

@@ -3,6 +3,9 @@
   font-family 'vicon'
   src url($icon-url + '%s.eot')
   src url($icon-url + '.woff') format('woff'), url($icon-url + '%s.ttf') format('truetype'), url($icon-url + '%s.svg#iconfont') format('svg')
+.vicon-loading-circle:before
+  content '\e6b2'
+  animation LoadingCircle 1.2s linear infinite
 .vicon-loading-c:before
   content '\e6b1'
   animation LoadingCircle 1.2s linear infinite
@@ -14,10 +17,10 @@
   animation LoadingCircle 1.2s linear infinite
 .vicon-loading-spinner:before
   content '\e6ae'
-  animation LoadingCircle 1.2s steps(12) infinite
+  animation LoadingCircle 1.5s steps(12) infinite
 .vicon-loading-dot:before
   content '\e6ad'
-  animation LoadingCircle 1.2s steps(8) infinite
+  animation LoadingCircle 1s steps(8) infinite
 .vicon-loading-gear:before
   content '\e6ac'
   animation LoadingCircle 2s linear infinite
@@ -35,7 +38,7 @@
   content '\e6a6'
 .vicon-loading:before
   content '\e6a5'
-  animation LoadingCircle 1.2s linear infinite
+  animation LoadingCircle 1s linear infinite
 .vicon-user-switch:before
   content '\e6a4'
 .vicon-wrench:before
