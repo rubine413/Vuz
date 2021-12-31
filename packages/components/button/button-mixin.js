@@ -87,20 +87,19 @@ export default {
       }
 
       return (
-        `q-btn--${this.design} q-btn--${this.isRound === true ? 'round' : 'rectangle'}` +
+        `v-btn--${this.design} v-btn--${this.isRound === true ? 'round' : 'rectangle'}` +
         (colors !== void 0 ? ' ' + colors : '') +
         (this.isDisabled !== true ? ' q-focusable q-hoverable' : ' disabled') +
-        (this.fab === true ? ' q-btn--fab' : this.fabMini === true ? ' q-btn--fab-mini' : '') +
-        (this.noCaps === true ? ' q-btn--no-uppercase' : '') +
-        (this.rounded === true ? ' q-btn--rounded' : '') +
-        (this.dense === true ? ' q-btn--dense' : '') +
-        (this.stretch === true ? ' no-border-radius self-stretch' : '') +
-        (this.glossy === true ? ' glossy' : '')
+        (this.fab === true ? ' v-btn--fab' : this.fabMini === true ? ' v-btn--fab-mini' : '') +
+        (this.noCaps === true ? ' v-btn--no-uppercase' : '') +
+        (this.rounded === true ? ' v-btn--rounded' : '') +
+        (this.dense === true ? ' v-btn--dense' : '') +
+        (this.stretch === true ? ' no-border-radius self-stretch' : '')
       )
     },
 
     innerClasses() {
-      return this.alignClass + (this.stack === true ? ' column' : ' row') + (this.noWrap === true ? ' no-wrap text-no-wrap' : '') + (this.loading === true ? ' q-btn__content--hidden' : '')
+      return this.alignClass + (this.stack === true ? ' column' : ' row') + (this.noWrap === true ? ' no-wrap text-no-wrap' : '') + (this.loading === true ? ' v-btn__content--hidden' : '')
     },
   },
 }
