@@ -7,20 +7,29 @@ const sizes = {
 }
 export default {
   props: {
+    // 按钮类型：[a|button|reset|submit],
     type: String,
     label: [Number, String],
+    // 按钮图标
     icon: String,
+    // 右侧按钮图标
     iconRight: String,
+    // 圆形图标
     round: Boolean,
+    // 带边框
     outline: Boolean,
+    // 扁平化
     flat: Boolean,
+    // 更明显的圆角
     rounded: Boolean,
+    // 适配父容器宽度
     block: Boolean,
-
+    // 大小：[xs|sm|md|lg|xl]
     size: String,
-
+    // 颜色
     color: String,
     textColor: String,
+    // 
     dense: Boolean,
     stretch: Boolean,
     loading: {
