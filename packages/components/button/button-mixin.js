@@ -26,12 +26,15 @@ export default {
     block: Boolean,
     // 大小：[xs|sm|md|lg|xl]
     size: String,
-    // 颜色
+    // 背景颜色
     color: String,
+    // 文本颜色
     textColor: String,
     // 紧凑模式
     dense: Boolean,
+    // 适配父容器高度
     stretch: Boolean,
+    // 加载中
     loading: {
       type: Boolean,
       default: null,
