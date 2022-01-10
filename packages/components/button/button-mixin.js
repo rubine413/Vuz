@@ -29,7 +29,7 @@ export default {
     // 颜色
     color: String,
     textColor: String,
-    // 
+    // 紧凑模式
     dense: Boolean,
     stretch: Boolean,
     loading: {
